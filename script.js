@@ -1,16 +1,11 @@
-function print5() {
-  alert(1);
-  alert(2);
-  alert(3);
-  alert(4);
-  alert(5);
+/* Shows alert stating that javascript is working (will only show when javascript is working) */
+function javascriptChecker() {
+  alert('Javascript is Functioning Correctly!');
 }
 
-/*
-print5();
-print5();
-*/
+javascriptChecker();
 
+/* Prints numbers 1-5 to the console */
 function console5() {
   console.log('1');
   console.log('2');
@@ -21,3 +16,11 @@ function console5() {
 
 console5();
 console5();
+
+/* Changes the page's heading to the value of 'element' */
+function afterPageLoads() {
+  var heading = document.getElementById('pageheading');
+  heading.firstChild.nodeValue = 'New Heading';
+}
+
+document.addEventListener('DOMContentLoaded', afterPageLoads);
