@@ -26,9 +26,9 @@ function afterPageLoads() {
 document.addEventListener('DOMContentLoaded', afterPageLoads); /* Triggers the function after the page has loaded */
 
 /* Changes the page's paragraph when page is clicked */
-function paragraphChangeClick() {
+function paragraphChange() {
   var paragraph = document.getElementById('paragraph');
   paragraph.firstChild.nodeValue = 'New Paragraph';
 }
 
-document.addEventListener('click', paragraphChangeClick); /* Triggers the function on click */
+document.addEventListener('click', paragraphChange);
