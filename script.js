@@ -3,7 +3,7 @@ function javascriptChecker() {
   alert('Javascript is Functioning Correctly!');
 }
 
-javascriptChecker();
+javascriptChecker(); /* Calls above function */
 
 /* Prints numbers 1-5 to the console */
 function console5() {
@@ -14,8 +14,8 @@ function console5() {
   console.log('5');
 }
 
-console5();
-console5();
+console5(); /* Calls above function for the first time */
+console5(); /* Calls above function for the second time */
 
 /* Changes the page's heading to the value of 'element' */
 function afterPageLoads() {
