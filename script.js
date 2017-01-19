@@ -21,6 +21,9 @@ console5(); /* Calls above function for the second time */
 function afterPageLoads() {
   var heading = document.getElementById('pageheading');
   heading.firstChild.nodeValue = 'New Heading';
+
+  var paragraph2 = document.getElementById('paragraph2');
+  paragraph2.addEventListener('click', paragraphChange2)
 }
 
 document.addEventListener('DOMContentLoaded', afterPageLoads); /* Triggers the function after the page has loaded */
@@ -31,4 +34,10 @@ function paragraphChange() {
   paragraph.firstChild.nodeValue = 'New Paragraph';
 }
 
+function paragraphChange2() {
+  var paragraph2 = document.getElementById('paragraph2');
+  paragraph2.firstChild.nodeValue = 'New Paragraph 2';
+}
+
 document.addEventListener('click', paragraphChange);
+document.addEventListener('DOMContentLoaded', afterPageLoads);
