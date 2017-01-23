@@ -1,9 +1,10 @@
 /* Shows alert stating that javascript is working (will only show when javascript is working) */
-function javascriptChecker() {
+/*function javascriptChecker() {
   alert('Javascript is Functioning Correctly!');
 }
 
-javascriptChecker(); /* Calls above function */
+javascriptChecker();
+*/
 
 /* Prints numbers 1-5 to the console */
 function console5() {
@@ -24,6 +25,9 @@ function afterPageLoads() {
 
   var paragraph2 = document.getElementById('paragraph2');
   paragraph2.addEventListener('click', paragraphChange2)
+
+  var paragraph3 = document.getElementById('paragraph3');
+  paragraph3.addEventListener('mouseover', paragraphChange3)
 }
 
 document.addEventListener('DOMContentLoaded', afterPageLoads); /* Triggers the function after the page has loaded */
@@ -41,3 +45,7 @@ function paragraphChange2() {
 
 document.addEventListener('click', paragraphChange);
 document.addEventListener('DOMContentLoaded', afterPageLoads);
+
+function paragraphChange3() {
+  paragraph3.firstChild.nodeValue = 'New Paragraph 3';
+}
