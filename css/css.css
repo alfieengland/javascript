@@ -6,6 +6,13 @@
 	padding: 0;*/
 }
 
+body {
+	width: 100vw;
+	text-align: center;
+	font-size: 200%;
+}
+
 #paragraph3 {
   width: 200px;
+	display: inline;
 }
